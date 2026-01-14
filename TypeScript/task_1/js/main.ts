@@ -26,3 +26,11 @@ const director1: Directors = {
   fullTimeEmployee: true,
   numberOfReports: 17,
 }
+
+interface printTeacherFunction {
+	(firstName: string, lastName: string): string
+}
+
+const printTeacher: printTeacherFunction = (firstName: string, lastName: string) => {
+	return (`${firstName[0]}. ${lastName}`);
+}
